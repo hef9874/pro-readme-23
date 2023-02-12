@@ -29,7 +29,7 @@ inquirer
         message: 'Provide the path to a screenshot of your application and usage instructions',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Select a license used on this project.',
     },
@@ -43,7 +43,7 @@ inquirer
         name: 'link',
         message: 'Provide the URL to access the deployed app and your GitHub page.',
     },
-]);
+])
     .then(data => {
         writeToFile("README.md", data)
     });
