@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 function questionsAnswers() {
 let response = "";
 inquirer
-.prompt( = [
+.prompt( [
     {
         type: 'input',
         name: 'title',
